@@ -1,0 +1,382 @@
+html, body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #FAFBFC;
+}
+
+.banner {
+    height: 599px;
+    background-image: url(images/flightTabPic.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerOverlay {
+    height: 599px;
+    
+   
+}
+.header {
+    display: flex;
+    padding: 21px 104px;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+   
+}
+.whiteHeader {
+    height: 90px;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.finds {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    
+
+}
+.flightDiv {
+    display: flex;
+}
+
+.staysDiv {
+    display: flex;
+}
+.fligshtLine {
+   
+    height: 5px;
+    background: var(--Mint-Green, #8DD3BB);
+}
+
+.findStays {
+    margin-right: 4px;
+    margin-left: 32px;
+     color: var(--Neutrals, #FFF);
+}
+.findFlights {
+    margin-right: 4px;
+    color: var(--Neutrals, #FFF);
+    
+   
+    
+
+}
+.flightDiv{
+    border-bottom: 3px solid  var(--Mint-Green, #8DD3BB); 
+} 
+
+
+.finds p {
+    color: var(--Blackish-Green, #121);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+
+.globe {
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.logins{
+    display: flex; 
+    align-items: center; 
+    height: 48px;
+    width: 25%;
+    justify-content: end;
+}
+
+.logins .login {
+    margin-right: 32px;
+    color: var(--Blackish-Green, #121);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-items: center;
+}
+
+.logins .signUp {
+    display: flex;
+  
+
+color:  var(--Neutrals, #FFF);
+
+font-family: 'Montserrat';
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+
+
+border-radius: 8px;
+background:var(--Blackish-Green, #121);
+
+
+
+display: flex;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+
+}
+.signUp {
+    cursor: pointer;
+    border: none;
+}
+
+
+.landingWords {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    justify-content: center; 
+    width: 100%;
+    display: flex;
+    margin-top: 84px;
+}
+.landingWords p{
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.helping{
+    color: var(--Neutrals, #FFF);
+text-align: center;
+font-family: 'Montserrat';
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 4px;
+}
+
+
+.live {
+    color: var(--Neutrals, #FFF);
+text-align: center;
+font-family: 'Montserrat';
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+margin-bottom: 16px;
+}
+
+.special {
+    color: var(--Neutrals, #FFF);
+text-align: center;
+
+font-family: 'Montserrat';
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.selectParent {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.selectFlight {
+   
+    /* justify-content: center; */
+    width: 87%;
+
+    /* padding: 16px 32px 32px 32px; */
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    height: 272px;
+    border-radius: 16px;
+    background: var(--Neutrals, #FFF);
+    box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+   
+    
+}
+
+.finds1 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+
+.findFlights1, .findStays1 {
+    width: 24px;
+    height: 24px;   
+    
+}
+
+.finds1 p {
+    align-self: stretch;
+    color: var(--Blackish-Green, #121);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 32px 24px;
+
+    
+}
+
+
+.vertLine{
+    width: 1px;
+    height: 48px;
+    background: #D7E2EE;
+}
+
+.frames {
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        margin-left: 24px;
+        margin-right: 24px;
+        
+}
+
+.addPromo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 32px;
+    margin: 32px 24px 48px;
+}
+
+.showFlight {
+    align-items: center;
+    display: flex;
+    margin-left: 24px;
+    border-radius: 4px;
+    background: var(--Mint-Green, #8DD3BB);
+    display: flex;
+    height: 48px;
+    padding: 2px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+
+
+.addPromo span {
+    color: var(--Blackish-Green, #121);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.showFlight span{
+    color: var(--Blackish-Green, #121);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cardsContainerText {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 80px;
+   
+}
+
+.planDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.plan h1{
+    height: 36px;
+    align-self: stretch;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+    
+}
+
+.plan p {
+    align-self: stretch;
+    color: var(--Blackish-Green, #121);
+    opacity: 0.75;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+
+    
+}
+
+.seeMore {
+    display: flex;
+    align-items: center;
+}
+
+.seeMore button{
+    color: var(--Blackish-Green, #121);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: end;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid var(--Mint-Green, #8DD3BB);
+    background-color: #FFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+
+   
+}
+
+.finds a {
+    text-decoration: none;
+}
