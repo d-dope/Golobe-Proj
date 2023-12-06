@@ -9,54 +9,79 @@ body {
 
 .banner {
     height: 599px;
-    margin: 30px 30px 0px 30px;
-    border-radius: 24px;
-    background-image: url(images/Rectangle\ 31\ \(3\).png);
+    background-image: url(../images/flightTabPic.png);
     background-size: cover;
     background-position: center;
 }
 
 .bannerOverlay {
     height: 599px;
-    background-color: rgba(0 0 0 / 50%);
-    border-radius: 24px;
+    
+   
 }
 .header {
     display: flex;
-    padding: 24px 2px;
+    padding: 21px 104px;
     justify-content: space-between;
     align-items: center;
+    width: 87%;
    
+}
+.whiteHeader {
+    height: 90px;
+    background: white;
+    display: flex;
+    justify-content: center;
 }
 
 .finds {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     width: 25%;
     display: flex;
     justify-content: start;
     
 
 }
+.flightDiv {
+    display: flex;
+}
 
-.findStays,
+.staysDiv {
+    display: flex;
+}
+.fligshtLine {
+   
+    height: 5px;
+    background: var(--Mint-Green, #8DD3BB);
+}
+
+.findStays {
+    margin-right: 4px;
+    margin-left: 32px;
+     color: var(--Neutrals, #FFF);
+}
 .findFlights {
     margin-right: 4px;
-   margin-left: 32px;
     color: var(--Neutrals, #FFF);
     
    
     
 
 }
+.flightDiv{
+    border-bottom: 3px solid  var(--Mint-Green, #8DD3BB); 
+} 
+
 
 .finds p {
-    color: var(--Neutrals, #FFF);
+    color: var(--Blackish-Green, #121);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    
 }
 
 
@@ -78,7 +103,7 @@ body {
 
 .logins .login {
     margin-right: 32px;
-    color: var(--Neutrals, #FFF);
+    color: var(--Blackish-Green, #121);
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
@@ -86,143 +111,38 @@ body {
     line-height: normal;
     align-items: center;
 }
-
-@media (max-width: 480px){
-    .bannerOverlay .landingWords {
-        margin-top: 1px;
-    }
-    .globe {
-        display: none;
-    }
-    .logins {
-    
-    }
-    .banner{
-        width: 100%;
-    }
-    .planDiv{
-        flex-direction: column;
-    }
-    .cardsContainer{
-        flex-direction: column;
-    }
-    .cardsContainer .card {
-        width: 93%;
-    }
-    .bigCardText .showFlight1 {
-        margin-left: 0px;
-    }
-    .frames {
-        flex-direction: column;
-    }
-    .reviewCards {
-        flex-direction: column;
-    }
-    .div1 input  {
-        width: 0px;
-    }
-    .onFooter .div2 img {
-        display: none;
-    }
-    .smallBox img {
-        display: none;
-    }
-    .footer1 .footerDiv2 {
-        justify-content: unset;
-    }
-    .longBox {
-        gap: 10px;
-    }
-   
-    /* .footerDiv2  {
-        flex-direction: column;
-    } */
-   
-}
-
-
-@media (max-width: 768px){
-    /* .bannerOverlay .landingWords {
-        margin-top: 1px;
-    }
-    .globe {
-        display: none;
-    }
-    .logins {
-    
-    }
-    .banner{
-        width: 100%;
-    }
-    .planDiv{
-        flex-direction: column;
-    }
-    .cardsContainer{
-        flex-direction: column;
-    }
-    .cardsContainer .card {
-        width: 93%;
-    }
-    .bigCardText .showFlight1 {
-        margin-left: 0px;
-    }
-    .frames {
-        flex-direction: column;
-    }
-    .reviewCards {
-        flex-direction: column;
-    }
-    .div1 input  {
-        width: 0px;
-    }
-    .onFooter .div2 img {
-        display: none;
-    }
-    .smallBox img {
-        display: none;
-    }
-    .footer1 .footerDiv2 {
-        justify-content: unset;
-    }
-    .longBox {
-        gap: 10px;
-    }
-    */
-    /* .footerDiv2  {
-        flex-direction: column;
-    } */
-   
-}
-
 
 .logins .signUp {
     display: flex;
-   
-    color: var(--Neutrals, #000000);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-right: 32px;
-    border-radius: 8px;
-    background: var(--Neutrals, #FFF);
-    display: flex;
-    padding: 10px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
+  
+
+color:  var(--Neutrals, #FFF);
+
+font-family: 'Montserrat';
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+
+
+border-radius: 8px;
+background:var(--Blackish-Green, #121);
+
+
+
+display: flex;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
 
 }
 .signUp {
     cursor: pointer;
     border: none;
-
 }
-
-
-
 
 
 .landingWords {
@@ -284,14 +204,16 @@ line-height: normal;
    
     /* justify-content: center; */
     width: 87%;
+
+    /* padding: 16px 32px 32px 32px; */
     flex-direction: column;
     gap: 32px;
     align-items: center;
-    min-height: 280px;
+    height: 272px;
     border-radius: 16px;
     background: var(--Neutrals, #FFF);
     box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
-    
+   
     
 }
 
@@ -299,7 +221,7 @@ line-height: normal;
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-top: 16px;
+    
 
 }
 
@@ -307,19 +229,18 @@ line-height: normal;
 .findFlights1, .findStays1 {
     width: 24px;
     height: 24px;   
-    margin-right: 8px;
-    margin-left: 32px;
+    
 }
 
 .finds1 p {
- 
+    align-self: stretch;
     color: var(--Blackish-Green, #121);
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-right: 32px;
+    margin: 32px 24px;
 
     
 }
@@ -335,9 +256,9 @@ line-height: normal;
         display: flex;
         gap: 24px;
         justify-content: space-between;
-        margin-left: 32px;
-        margin-right: 32px;
-        margin-top: 48px;
+        margin-left: 24px;
+        margin-right: 24px;
+        
 }
 
 .addPromo {
@@ -345,7 +266,7 @@ line-height: normal;
     justify-content: end;
     align-items: center;
     margin-right: 32px;
-    margin: 32px;
+    margin: 32px 24px 48px;
 }
 
 .showFlight {
@@ -423,7 +344,7 @@ line-height: normal;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 
     
 }
@@ -456,345 +377,226 @@ line-height: normal;
    
 }
 
-.parentCards{
-    display: flex; 
-    justify-content: center; 
-    margin-bottom: 80px;
+.finds a {
+    text-decoration: none;
+}
+
+.map {
+    background-image: url(../images/map.png);
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
 }
 
 
 
-.cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 87%;
-    gap: 32px;
-}
-    
-
-.card {
-    height: 110px;
-    width: 29%;
-    /* background-color: red; */
-    display: flex;
-    padding: 8px 16px;
-    align-items: center;
-    gap: 16px;
-    /* flex: 1 0 0; */
-    border-radius: 16px;
-    background: var(--Neutrals, #FFF);
-    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
-    cursor: pointer;
-}
-
-.insideCard {
-    display: flex;
-    padding: 16px 0px;
-    align-items: center;
-    height: 80%;
-}
-
-
-.insideCard img{
-    width: 90px;
-    height: 90px;
-}
-
-
-.cardText {
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    height: 85%;
-}
-
-
-.cardText p {
+.cardsContainerText1 .plan p {
     align-self: stretch;
     color: var(--Blackish-Green, #121);
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    opacity: 0.7;
-    margin-bottom: 8px;
-}
-
-.cardText span {
-    color: var(--Blackish-Green, #121);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    display: flex;
-    gap: 8px;
-}
-.parentBigCards {
-    display: flex; 
-    justify-content: center; 
-}
-
-.bigCards{
-    display: flex;
-    justify-content: space-between;
-    width: 87%;
-}
-
-.bigCard {
-    width: 49%;
-    height: 559px;
-    border-radius: 20px;
-    background-image: url(images/Rectangle\ 40.png);
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    
-}
-.bigCard2 {
-    width: 49%;
-    height: 559px;
-    border-radius: 20px;
-    background-image: url(images/Rectangle\ 41.png);
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.bigCardText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin-top: 372px; */
-    
-}
-
-.bigCardText h1 {
-    color: var(--Neutrals, #FFF);
-    text-align: center;
-    font-family: 'Montserrat';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 8px;
-    margin-top: 93px;
-    margin-left: 3%;
-}
-
-.bigCardText p {
-    color: var(--Neutrals, #FFF);
-    text-align: center;
+    opacity: 0.75;
     font-family: 'Montserrat';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 70%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 61%;
-    margin-left: 3%;
-}
+    margin-bottom: 24px; 
+} 
 
-.darkedText {
-    width: 100%;
-    height: 280px;
-    border-radius: 0px 0px 24px 24px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(18, 18, 18, 0.75) 48.67%);
-    margin-top: 279px;
+.cardsContainerText1 {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 80px;
    
 }
 
-
-.showFlight1 {
-
-    align-items: center;
+.planDiv1 {
     display: flex;
-    margin-left: 24px;
-    border-radius: 4px;
-    background: var(--Mint-Green, #8DD3BB);
-    height: 48px;
-    padding: 2px 20px;
-    justify-content: center;
-    gap: 4px;
-    margin-top: 16px;
-    margin-bottom: 24px;
+    justify-content: space-between;
+    width: 87%;
+    
+}
+.plan1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
-.showFlight1 span{
+.plan1 h1{
+    height: 36px;
+    align-self: stretch;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+    
+}
+
+.plan1 p {
+    align-self: stretch;
     color: var(--Blackish-Green, #121);
-    font-family: Montserrat;
+    opacity: 0.75;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+
+    
+}
+
+.seeMore1 {
+    display: flex;
+    align-items: center;
+}
+
+.seeMore1 button{
+    color: var(--Blackish-Green, #121);
+    font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: end;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid var(--Mint-Green, #8DD3BB);
+    background-color: #FFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+
+   
 }
 
-.reviewDiv {
+
+
+.flightCardsDiv {
     display: flex;
     justify-content: center;
-    
 }
 
-.reviewCards {
+.flightCards {
     display: flex;
     justify-content: space-between;
-    gap: 48px;
     width: 87%;
+    gap: 16px;
 }
 
-
-.reviewCard {
-    width: 40%;
-    height: 584px;
-    display: inline-flex;
-    
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    border-radius: 20px;
-    box-shadow:  0px 0px 10px rgba(17, 34, 17, 0.10);
-    background-color: rgb(53, 20, 20);
-    width: 100%;
-    margin-left: -0.5%;
-    box-shadow: 26px 24px  rgba(141, 211, 187, 0.40);
-    border-radius: 20px;
-    background: var(--Neutrals, #FFF);
-
-    
-   
-    
+.flightCard1 {
+    height: 420px;
+    border-radius: 12px;
+    background-image: url(../images/city1.png);
+    width: 23.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        
+}
+.flightCard2 {
+    height: 420px;
+    border-radius: 12px;
+    background-image: url(../images/city2.png);
+    width: 23.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        
+}
+.flightCard3 {
+    height: 420px;
+    border-radius: 12px;
+    background-image: url(../images/city3.png);
+    width: 23.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        
+}
+.flightCard4 {
+    height: 420px;
+    border-radius: 12px;
+    background-image: url(../images/city4.png);
+    width: 23.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        
 }
 
-.insideTexts {
-    height: 100%;
-    padding: 24px;
+.journeyText {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 260px;
+    margin-left: 10%;
 }
 
+.journeyPrice {
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 10%;
 
+}
 
-
-.insideTexts h1 {
-    height: 80px;
-    align-self: stretch;
-    color: var(--Blackish-Green, #121);
+.journeys h1 {
+    color: var(--Neutrals, #FFF);
     font-family: 'Montserrat';
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
-    margin-top: 0;
 }
 
-
-.insideTexts p {
-    height: 37px;
-    align-self: stretch;
-    overflow: hidden;
-    color: var(--Blackish-Green, #121);
-    text-overflow: ellipsis;
-    white-space: wrap;
+.journeys p {
+    color: var(--Neutrals, #FFF);
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    opacity: 0.5;
-    margin-bottom: 12px;
 }
 
-
-.insideTexts h4 {
-    align-self: stretch;
-    color: var(--Blackish-Green, #121);
-    text-align: right;
-    font-family: "Montserrat";
-    font-size: 14px;
+.journeyPrice h2 {
+    color: var(--Neutrals, #FFF);
+    font-family: 'Montserrat';
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 0;
-    margin-bottom: 16px;
-
-}
-
-.stars {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    align-self: stretch;
-    margin-bottom: 20px;
-}
-
-.insideTexts h2 {
-    align-self: stretch;
-    color: var(--Blackish-Green, #121);
-    font-family: "Montserrat";
-    font-size: 14px;
-    margin-bottom: 4px;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
-.google {
+.flightButton button{
+    width: 83%;
+    justify-content: center;
     display: flex;
     align-items: center;
-    gap: 8px;
+    margin-left: 10%;
+    border-radius: 4px;
+    background: var(--Mint-Green, #8DD3BB);
+    height: 48px;
+    padding: 8px 16px;
+    gap: 4px;
     align-self: stretch;
-}
-.google  {
-    margin-bottom: 40px;
-    margin-top: 0;
-
-}
-.google span {
     color: var(--Blackish-Green, #121);
-    font-family: "Montserrat";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    opacity: 0.4;
-    
-}
-
-.cardImage {
-    height: 200px;
-    align-self: stretch;
-    border-radius: 8px;
-    background:  lightgray 50% / cover no-repeat;
-}
-
-
-
-.insideTexts h3 {
-    
-    align-self: stretch;
-    overflow: hidden;
-    color: var(--Blackish-Green, #121);
-    text-overflow: ellipsis;
-    white-space: wrap;
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    opacity: 0.5;
-    margin-top: 0;
-    margin-bottom: 12px;
+    border: none;
 }
-
-
-
-
 .onFooter {
     display: flex;
     width: 87%;
-    min-height: 305px;
+    height: 305px;
     justify-content: space-between;
     border-radius: 20px;
     background: #CDEAE1;
@@ -803,6 +605,7 @@ line-height: normal;
     margin-bottom: -154px;
 
 }
+
 
 .footerDiv {
     display: flex;
@@ -991,7 +794,7 @@ line-height: normal;
     color: #fff;
     padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    
     cursor: pointer;
     width: 100%;
     color: var(--Neutrals, #ffffff);
@@ -1000,28 +803,4 @@ line-height: normal;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
-}
-
-.support1 {
-    white-space: nowrap;
-    z-index: 100;
-    cursor: pointer;
-    bottom: 16px;
-    right: 24px;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    height: 44px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
-    border: none;
-    border-radius: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: padding 0.15s ease 0s, background-color 0.05s ease 0s;
-    color: rgb(255, 255, 255);
-    background: rgb(140, 211, 65);
-    display: flex;
-    overflow-x: hidden;
-    position: fixed !important;
 }
